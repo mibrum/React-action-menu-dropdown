@@ -1,0 +1,22 @@
+{
+    "menu": [
+        {
+            "id": "1",
+            "value": "My profile",
+            "route": "#",
+            "icon:": "fa-fa icon"
+        },
+        {
+            "id": "2",
+            "value": "Settings",
+            "route": "#",
+            "icon:": "fa-fa icon"
+        },
+        {
+            "id": "3",
+            "value": "Logout",
+            "route": "#",
+            "icon:": "fa-fa icon"
+        }
+    ]
+}

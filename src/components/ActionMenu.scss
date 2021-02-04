@@ -1,0 +1,67 @@
+@import "../App.scss";
+
+// Button
+.button {
+  @include transition(0.3s);
+  background-color: $white;
+  box-shadow: $box-shadow;
+  border-radius: 10%;
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
+}
+
+.button-icon {
+  @include transition(0.8s);
+  color: $text-color-light;
+  padding: 10px;
+  font-size: 20px;
+  &:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+// Items menu
+.menu-item {
+  -webkit-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+  background-color: $white;
+  text-align: left;
+  border-radius: 5px;
+  &:before {
+    display: none;
+  }
+}
+.item {
+  cursor: pointer;
+  padding: 0 15px;
+  &:first-child {
+    border-radius: 4px 4px 0 0;
+  }
+  &:last-child {
+    border-radius: 0 0 4px 4px;
+    span {
+      border-bottom: 0;
+    }
+  }
+  span {
+    @include transition(0.3s);
+    border-bottom: 1px solid rgba($black, 0.05);
+    color: $text-color-light;
+    display: block;
+    padding: 16px 0;
+    font-size: 14px;
+    text-decoration: none;
+    &:active {
+      color: $text-color-accent;
+    }
+    &:hover {
+      color: $text-color-accent;
+    }
+    &:focus {
+      color: $text-color-accent;
+      outline: none;
+    }
+  }
+}

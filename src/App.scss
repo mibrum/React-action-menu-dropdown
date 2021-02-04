@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+@import './sass/mixins.scss';
+
+// Base colors
+$bg: #eff3f9;
+$white: #FFFFFF;
+$black: #000000;
+$text-color-light: #a4a6af;
+$text-color-lighter: #E6E7E8;
+$text-color-accent: #196cff;
+$box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+$box-shadow-hover: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+// Global Application styles 
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin-top: 60px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
